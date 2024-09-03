@@ -13,20 +13,27 @@ public class Main {
 
         switch (operation) {
             case "+":
-                System.out.println(a + b);
+                System.out.println("Ответ: " + (a + b));
                 break;
 
             case "-":
-                System.out.println(a - b);
+                System.out.println("Ответ: " + (a - b));
                 break;
 
             case "*":
-                System.out.println(a * b);
+                System.out.println("Ответ: " + (a * b));
                 break;
 
             case "/":
-                System.out.println(a / b);
+                if (a == 0 && b == 0) {
+                    System.out.println("Делить на ноль нельзя");
+                }
+
+                System.out.println("Ответ: " + (a / b) );
                 break;
+
+            default:
+                System.out.println("Ошибка");
         }
 
     }
