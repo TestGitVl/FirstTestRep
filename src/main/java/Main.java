@@ -11,5 +11,23 @@ public class Main {
         int a = in.nextInt();
         int b = in.nextInt();
 
+        switch (operation) {
+            case "+":
+                System.out.println(a + b);
+                break;
+
+            case "-":
+                System.out.println(a - b);
+                break;
+
+            case "*":
+                System.out.println(a * b);
+                break;
+
+            case "/":
+                System.out.println(a / b);
+                break;
+        }
+
     }
 }
